@@ -20,6 +20,18 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  code:
+    output: true
+    permalink: /:collection/:path/
+  sedcode:
+    output: true
+    permalink: /:collection/:path/
+  timecode:
+    output: true
+    permalink: /:collection/:path/
+  giscode:
+    output: true
+    permalink: /:collection/:path/
   posts:
     output: true
     permalink: /blog/:path/
