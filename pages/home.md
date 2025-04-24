@@ -1,8 +1,8 @@
 ---
 layout: home
 permalink: "/"
-title: "Washington margin canyon flushing"
-description: "A hydrodynamic and sedimentological study of ocean process-driven sediment transport in submarine canyons along the northern Cascadia Margin."
+title: "Modern Margins"
+description: "Coastal sediment transport website of Evan Lahr."
 
 meta_description: " "
 meta_title:  

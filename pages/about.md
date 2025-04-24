@@ -1,27 +1,30 @@
 ---
-layout: basic
-title: "Meet the team."
-date: 2018-11-28
+layout: project-left
+title: "welcome."
 permalink: "/about/"
 description: " "
-image: "/assets/images/team/people.png"
+image: "/assets/images/gen/content/IMG_3452.HEIC"
+gallery:
+  - image: "/assets/images/gen/content/IMG_3452.HEIC"
+  - image: "/assets/images/gen/content/foramcar.jpg"
+  - image: "/assets/images/gen/content/profpic.png"
+  - image: "/assets/images/gen/content/thompson.png"
+
 ---
- This project is a collaboration between the University of Washington and the USGS office in Santa Cruz. Jenna Hill (USGS) and Andrea Ogston (UW) are the principal investigators, supported by Kurt Rosenberger (USGS), and Evan Lahr (UW). Our team has expertise in fluid mechanics, physical oceanography, and marine geology.
+ I am a marine geologist focused on modern sediment transport from river mouths to the continental slope. In this website, you'll find a mix of oceanography and geology content intended to function as a set of notes for myself and others. I hope you find what you're looking for.
 
-# Our research goals.
+### research curriculum
+ I study how continental margins fill and flush sediment in response to oceanographic and tectonic forces. Over the past 3 years, our team has made fundamental discoveries in submarine canyon systems, including that river floods can emplace large turbidite event layers in canyon channels, subduction zone earthquakes trigger massive cohesive debris flows, and that canyon flushing to the deep sea under subduction zone earthquake scenarios is variable and controlled by canyon morphology.
+  
 
-### i. Should you trust a turbidite?
+### analytical methods
+My research methods span the water column and the seabed. To constrain water column properties, I employ acoustic and optical sensor data (ADCP, ADV, ABS, OBS). The sediment core tools I use address sedimentology (ct, microstructure, grain size, xrf), radioisotope geochronology (<sup>210</sup>Pb, <sup>137</sup>Cs, <sup>7</sup>Be, <sup>234</sup>Th, <sup>14</sup>C), and geochemistry ( δ<sup>13</sup>C,  δ<sup>15</sup>N, lignin oxidation products).
+ 
+ More recently, I place an emphasis on accessible, open source, low cost ocean monitoring. To that end, I write and open source a wide variety of scripts and software packages to analyze geological data. I also develop low cost environmental monitoring solutions using remotely operated vehicles and micro-moorings. These designs are open source and highly capable, allowing robust data collection at >500 m and >100 km offshore for <$1000.
 
-Submarine canyon turbidite stratigraphy in WA is used to infer seismic recurrence (1,2,3). This interpretation is often made under the assumption that turbidity flows are solely earthquake-driven sediment failures (e.g., no floods, storms, or other processes create turbidites). New evidence suggests canyons are more active than scientists initially believed (4,5,6,7,8). We want to know if this "highstand-dormant" conceptual model is valid offshore Washington, and we are collecting brand new turbidite records to explore turbidite sedimentology, age, and chemical composition.
 
-### ii. What remobilizes canyon sediment?
+### funding and collaborators
 
-Turbidity currents need sediment, but how is that sediment remobilized? Ocean currents, river discharge, and wave events are known to trigger turbidity currents in sites throughout the globe (9,10,11,12). Canyon axis hydrodynamics are notoriously difficult to predict and model (9,10,11,12), meaning that in order to catch these processes in action, we must deploy sensors to monitor canyons directly. Our coordinated sensor deployment will record the minute-by-minute, cm-scale current structure and bottom boundary layer across multiple canyon systems.
+  My work is currently supported by the National Science Foundation, USGS Pacific Coastal and Marine Science Center, the Quaternary Research Center, and the University of Washington. Many of my projects are a collaboration between academic and government institutions with expertise in fluid mechanics, physical oceanography, and marine geology. The research featured in this website is funded primarily through NSF Award Number 2147983.
 
-### iii. Can shear stress alone trigger turbidity currents?
-
-Near-bed shear stress is one of the fundamental mechanisms of sediment resuspension. A site-specific knowledge of sediment resuspension threshold is a prerequisite to an understanding of turbidity current initiation. This relationship has not yet been published. A variety of seafloor characteristics, including the grain size distribution, porosity, and biogenic constituents can exert primary control on sediment resuspension. As part of this project, we aim to measure the seabed shear-resuspension parameters across 
-
-## Our funding sources
-
-The research featured in this project is funded primarily through NSF Award Number 2147983 and by several funding sources within the USGS and University of Washington.
+  This is some  text.
