@@ -1,13 +1,13 @@
 ---
 layout: project-right
-title: "Model shear stress from combined currents and waves"
-description: "A translated version of the trusted m94 script from Chris Sherwood, validated."
+title: "Warping CT images to age-control points"
+description: "A method for plotting core images with a linear-time Y axis."
 date: 2018-11-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/project-1-1-thumbnail.webp"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: ["Development"]
-client: "A translated version of the trusted m94 script from Chris Sherwood, validated."
+client: "A method for plotting core images on a linear-time Y axis."
 role: "Building Designer"
 gallery:
   - image: "/assets/images/gen/projects/project-1-1.webp"

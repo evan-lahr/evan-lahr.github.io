@@ -1,13 +1,13 @@
 ---
 layout: project-right
-title: "Model shear stress from combined currents and waves"
-description: "A translated version of the trusted m94 script from Chris Sherwood, validated."
+title: "VarveCount"
+description: "algorithm to count varves in raw 3D CT data"
 date: 2018-11-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/project-1-1-thumbnail.webp"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: ["Development"]
-client: "A translated version of the trusted m94 script from Chris Sherwood, validated."
+client: "Comparing the measured relationships of shear-stress and sediment resuspension to peak shear stress events"
 role: "Building Designer"
 gallery:
   - image: "/assets/images/gen/projects/project-1-1.webp"

@@ -1,13 +1,14 @@
 ---
 layout: project-right
-title: "Model shear stress from combined currents and waves"
-description: "A translated version of the trusted m94 script from Chris Sherwood, validated."
+title: "XRF Principal Component Analysis"
+description: "Perform PCA on gridded X-ray Fluorescence data from a Bruker M4 Tornado"
 date: 2018-11-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/project-1-1-thumbnail.webp"
 image: "/assets/images/gen/projects/project-1-2.webp"
 categories: ["Development"]
-client: "A translated version of the trusted m94 script from Chris Sherwood, validated."
+client: "Perform PCA on gridded X-ray Fluorescence data from a Bruker M4 Tornado"
+
 role: "Building Designer"
 gallery:
   - image: "/assets/images/gen/projects/project-1-1.webp"

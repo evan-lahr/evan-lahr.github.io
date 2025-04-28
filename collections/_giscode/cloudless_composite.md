@@ -1,13 +1,13 @@
 ---
 layout: project # alternative layouts: project, project-left, project-right, project-top
-title: "Rotate X-Y current data"
-description: "Visualize current data and rotate to the primary current direction"
+title: "LANDSAT Cloudless Composite Creation"
+description: "Google earth engine - Use the LS8 cloud bitmask and repeat observations over a time interval to create a cloudless composite"
 date: 2018-12-20
 weight: 3
 thumbnail: "assets/images/gen/projects/CascadiaShelf_Map.jpg"
 image: "/assets/images/gen/projects/project-2-1.webp"
 categories: ["coring"]
-client: "Visualize current data and rotate to the primary current direction"
+client: "Google earth engine - Use the LS8 cloud bitmask and repeat observations over a time interval to create a cloudless composite"
 role: "Building Designer"
 gallery:
   - image: "/assets/images/gen/projects/project-2-7.png"

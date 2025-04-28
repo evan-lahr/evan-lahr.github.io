@@ -1,13 +1,13 @@
 ---
 layout: project # alternative layouts: project, project-left, project-right, project-top
-title: "Is canyon sediment remobilization synchronous?"
-description: "understanding storm event forcing and response in canyons 150 km apart"
+title: "Major Delta-scale Land Area Estimation"
+description: "Google Earth Engine - monitor changes to land surface area"
 date: 2018-12-20
 weight: 3
 thumbnail: "assets/images/gen/projects/CascadiaShelf_Map.jpg"
 image: "/assets/images/gen/projects/project-2-1.webp"
 categories: ["coring"]
-client: "Understanding storm event forcing and response in canyons 150 km apart"
+client: "Google Earth Engine - measure spatial and overall changes to land surface area"
 role: "Building Designer"
 gallery:
   - image: "/assets/images/gen/projects/project-2-7.png"

@@ -1,13 +1,13 @@
 ---
 layout: project # alternative layouts: project, project-left, project-right, project-top
-title: "Rotate X-Y current data"
-description: "Visualize current data and rotate to the primary current direction"
+title: "Map Interpolation via XGBoost"
+description: "A framework to interpolate geospatial point data using engineered feature sets"
 date: 2018-12-20
 weight: 3
 thumbnail: "assets/images/gen/projects/CascadiaShelf_Map.jpg"
 image: "/assets/images/gen/projects/project-2-1.webp"
 categories: ["coring"]
-client: "Visualize current data and rotate to the primary current direction"
+client: "A framework to interpolate geospatial point data using engineered feature sets"
 role: "Building Designer"
 gallery:
   - image: "/assets/images/gen/projects/project-2-7.png"

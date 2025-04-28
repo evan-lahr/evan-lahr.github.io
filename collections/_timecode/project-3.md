@@ -1,13 +1,14 @@
 ---
 layout: project # alternative layouts: project, project-left, project-right, project-top
-title: "Rotate X-Y current data"
-description: "Visualize current data and rotate to the primary current direction"
+title: "Synchronize NDBC Records"
+description: "Stitch a folder of multiple NDBC annual records for long-term climatology. Accounts for differences in convention."
 date: 2018-12-20
 weight: 3
 thumbnail: "assets/images/gen/projects/CascadiaShelf_Map.jpg"
 image: "/assets/images/gen/projects/project-2-1.webp"
 categories: ["coring"]
-client: "Visualize current data and rotate to the primary current direction"
+client: "Stitch a folder of multiple NDBC annual records for long-term climatology. Accounts for differences in convention."
+
 role: "Building Designer"
 gallery:
   - image: "/assets/images/gen/projects/project-2-7.png"
