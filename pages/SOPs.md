@@ -41,7 +41,7 @@ description: "A collection of standard operating procedures, spreadsheets, and h
 
 ## Sediment Microstructure Analysis
 
- - [Slab Extraction, Diffusion Embedding, Digitization.](https://wa-canyons.github.io/blog/2022-01-01-Sediment-Core-Microstructure/)
+ - [Slab Extraction, Diffusion Embedding, Digitization.](https://evan-lahr.github.io/blog/2022-01-01-Sediment-Core-Microstructure/)
 
 
 ## Sediment Grain Size & Organic Matter Digestion
@@ -55,7 +55,16 @@ description: "A collection of standard operating procedures, spreadsheets, and h
 ## Film-based X-ray density Scanning
 
  - [SOP for shooting, development, digitizing](/assets/images/gen/content/xray_sop.pdf){:target="_blank"}
+
+## Example Cruise Prep Checklists
+
+ - [Spreadsheet: Tripod Build-up](/assets/images/gen/content/tripod_build_checklist.xlsx){:target="_blank"}
+
+ - [Spreadsheet: Deployment Packing 1](/assets/images/gen/content/Tripod_PackingList1.docx){:target="_blank"}
  
+ - [Spreadsheet: Deployment Packing 2](/assets/images/gen/content/Tripod_PackingList2.docx){:target="_blank"}
+
+ - [Spreadsheet: Coring Packing](/assets/images/gen/content/Coring_PackingList1.xlsx){:target="_blank"}
 
 ## Sensor Deployment Guide: Moorings & Tripods
 
@@ -76,16 +85,6 @@ description: "A collection of standard operating procedures, spreadsheets, and h
  - [Prepping OBSs for deployment](https://evan-lahr.github.io/blog/2022-01-01-HWG_OBSs/)
 
  - [Recovery Hardware](https://evan-lahr.github.io/blog/2022-01-01-HWG_RecoveryHardware/)
-
- - [Fabrication Spreadsheet](/assets/images/gen/content/SpikeActCalc_UpdatedAug2023.xlsx){:target="_blank"}
-
- - [Packing Spreadsheet](/assets/images/gen/content/SpikeActCalc_UpdatedAug2023.xlsx){:target="_blank"}
-
-
-
-
-
-## Coring Equipment Packing Lists
 
 
 ## Video-based SOPs
