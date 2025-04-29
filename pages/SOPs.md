@@ -25,7 +25,7 @@ description: "A collection of standard operating procedures, spreadsheets, and h
 
  - [Gamma Detector Useful Notes](/assets/images/gen/content/GammaDetectorNotes.pdf){:target="_blank"}
 
-  - [Gamma Spreadsheet Notes](/assets/images/gen/content/GammaTemplateSheetNotes.pdf){:target="_blank"}
+ - [Gamma Spreadsheet Notes](/assets/images/gen/content/GammaTemplateSheetNotes.pdf){:target="_blank"}
 
  - [Gamma Spectrum to Activity Spreadsheet](/assets/images/gen/content/Gamma template_Clean.xlsx){:target="_blank"}
 
@@ -55,31 +55,37 @@ description: "A collection of standard operating procedures, spreadsheets, and h
 ## Film-based X-ray density Scanning
 
  - [SOP for shooting, development, digitizing](/assets/images/gen/content/xray_sop.pdf){:target="_blank"}
-
-## Field Deployments of Moorings & Tripods
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_overview/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_MarineMetalGuide/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_Batteries/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_orings/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_mooring-anchors/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_MarineMetalGuide/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_ADCPs/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_ABSs/)
-
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_OBSs/)
  
- - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_RecoveryHardware/)
+
+## Sensor Deployment Guide: Moorings & Tripods
+
+ - [Overview](https://evan-lahr.github.io/blog/2022-01-01-HWG_overview/)
+
+ - [Marine Metal Guide](https://evan-lahr.github.io/blog/2022-01-01-HWG_MarineMetalGuide/)
+
+ - [Battery Selection](https://evan-lahr.github.io/blog/2022-01-01-HWG_Batteries/)
+
+ - [O-rings](https://evan-lahr.github.io/blog/2022-01-01-HWG_orings/)
+
+ - [Mooring Anchors](https://evan-lahr.github.io/blog/2022-01-01-HWG_mooring-anchors/)
+
+ - [Prepping ADCPs for deployment](https://evan-lahr.github.io/blog/2022-01-01-HWG_ADCPs/)
+
+ - [Prepping ADVs for deployment](https://evan-lahr.github.io/blog/2022-01-01-HWG_ABSs/)
+
+ - [Prepping OBSs for deployment](https://evan-lahr.github.io/blog/2022-01-01-HWG_OBSs/)
+
+ - [Recovery Hardware](https://evan-lahr.github.io/blog/2022-01-01-HWG_RecoveryHardware/)
+
+ - [Fabrication Spreadsheet](/assets/images/gen/content/SpikeActCalc_UpdatedAug2023.xlsx){:target="_blank"}
+
+ - [Packing Spreadsheet](/assets/images/gen/content/SpikeActCalc_UpdatedAug2023.xlsx){:target="_blank"}
 
 
-## Coring Equipment
+
+
+
+## Coring Equipment Packing Lists
 
 
 ## Video-based SOPs
