@@ -3,11 +3,11 @@ layout: project-left
 title: "welcome."
 permalink: "/about/"
 description: " "
-image: "/assets/images/gen/content/IMG_3452.HEIC"
+image: "/assets/images/gen/content/smile.png"
 gallery:
-  - image: "/assets/images/gen/content/IMG_3452.HEIC"
-  - image: "/assets/images/gen/content/foramcar.jpg"
+  - image: "/assets/images/gen/content/smile.png"
   - image: "/assets/images/gen/content/profpic.png"
+  - image: "/assets/images/gen/content/foramcar.jpg"
   - image: "/assets/images/gen/content/thompson.png"
 
 ---
