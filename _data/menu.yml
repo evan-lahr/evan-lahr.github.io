@@ -2,6 +2,18 @@ main:
   - name: Home
     url: /
     weight: 1
+  - name: code
+    url: /code/
+    child:
+      - name: "Sediment"
+        description: "core & bed sample data"
+        url: /sedcode/
+      - name: "Timeseries"
+        description: "environmental records"
+        url: /timecode/
+      - name: "GIS"
+        description: "maps & geospatial data"
+        url: /giscode/
   - name: Research
     url: /projects/
     weight: 2
@@ -18,35 +30,21 @@ main:
       - name: "Contrasting canyon morphology"
         description: "do adjacent canyons infill similarly?"
         url: /projects/project-4/
-
-  - name: code
-    url: /code/
-    child:
-      - name: "Sediment"
-        description: "core & bed sample data"
-        url: /sedcode/
-      - name: "Timeseries"
-        description: "environmental records"
-        url: /timecode/
-      - name: "GIS"
-        description: "maps & geospatial data"
-        url: /giscode/
-  - name: Videos
-    url: /Videos/
-    weight: 2
   - name: SOPs
     url: /SOPs/
     weight: 2
   - name: Blog
     url: /blog/
     weight: 2
+  - name: Videos
+    url: /Videos/
+    weight: 2
+  - name: Gallery
+    url: /Gallery/
+    weight: 2
   - name: About
     url: /about/
     weight: 3
-  - name: Contact
-    url: /contact/
-    weight: 4
-  
 
 footer_primary:
   - name: "Project Layout 1"

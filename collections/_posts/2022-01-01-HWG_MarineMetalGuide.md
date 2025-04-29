@@ -1,5 +1,5 @@
 ---
-title: 'details: metal hardware in the sea'
+title: 'Metal hardware in the sea'
 author: ejl
 date: 2022-05-01 01:01:00 +0800
 categories: [deployment hardware guide]
@@ -15,5 +15,5 @@ Beyond corrosion mitigation, the design and load rating of each piece of hardwar
 
 ## Key points:
  - 1. Avoid connecting galvanized and stainless hardware
- - 2. thou shall use zincs to preserve instruments and frames
- - 3. thou shall not skimp on metal thickness
+ - 2. Use zincs to preserve instruments and frames
+ - 3. Oversize hardware.

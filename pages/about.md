@@ -27,4 +27,11 @@ My research methods span the water column and the seabed. To constrain water col
 
   My work is currently supported by the National Science Foundation, USGS Pacific Coastal and Marine Science Center, the Quaternary Research Center, and the University of Washington. Many of my projects are a collaboration between academic and government institutions with expertise in fluid mechanics, physical oceanography, and marine geology. The research featured in this website is funded primarily through NSF Award Number 2147983.
 
-  This is some  text.
+
+### Contact me
+
+{% if site.contact_form.use_netlify_form %}
+  {% include framework/global/forms/form-contact-netlify.html %}
+{% elsif site.contact_form.use_formspree_form and site.contact_form.formspree_endpoint %}
+  {% include framework/global/forms/form-contact-formspree.html %}
+{% endif %}
