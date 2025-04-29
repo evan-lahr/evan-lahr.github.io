@@ -2,7 +2,7 @@
 layout: post
 title: "SOP Master list"
 permalink: "/SOPs/"
-description: "A collection of laboratory standard operating procedure documents, spreadsheets, and tips."
+description: "A collection of standard operating procedures, spreadsheets, and how-to guides."
 ---
 
 
@@ -55,6 +55,32 @@ description: "A collection of laboratory standard operating procedure documents,
 ## Film-based X-ray density Scanning
 
  - [SOP for shooting, development, digitizing](/assets/images/gen/content/xray_sop.pdf){:target="_blank"}
+
+## Field Deployments of Moorings & Tripods
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_overview/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_MarineMetalGuide/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_Batteries/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_orings/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_mooring-anchors/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_MarineMetalGuide/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_ADCPs/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_ABSs/)
+
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_OBSs/)
+ 
+ - [desc](https://evan-lahr.github.io/blog/2022-01-01-HWG_RecoveryHardware/)
+
+
+## Coring Equipment
+
 
 ## Video-based SOPs
 

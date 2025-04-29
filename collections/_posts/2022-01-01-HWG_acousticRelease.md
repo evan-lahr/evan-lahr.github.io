@@ -1,0 +1,39 @@
+---
+title: 'instrument: acoustic releases'
+author: ejl
+date: 2022-05-02 01:01:00 +0800
+categories: [deployment hardware guide]
+tags: [o-rings, EGG, Edgetech, Teledyne, RBR, SeaCon]
+---
+Any pressure rated housing is only as good as its worst *o-ring*, the small rubber ring that deforms under pressure to seal water out. Folks frequently replace these before deployment. Often, the greatest cost associated with sourcing new o-rings is the time spent determining which ones you need, and instrument manufacturers sometimes make part numbers hard to find. Below is a list of sizes often needed in the sed lab.
+   
+    2-240/N70 - Edgetech port LF
+    8-240/N90 - Edgetech port LF
+    2-008/N70 - Edgetech port LF
+
+    2-147/N70 - Edgetech port LF SD (primary piston)
+    8-147/N90 - Edgetech port LF SD (backup piston)
+    2-008/N70 - Edgetech port LF SD (purge port)
+
+    2-014/N70 - EGG 8242 (purge port)
+    2-240/N70 - EGG 8242 (piston)
+    2-245/N70 - EGG 8242 (face)
+
+    2-260/N70 - Teledyne/RDI Sentinel ADCP (old housing style)
+
+    2-225/N70 - RBR Virtuoso/Concerto housings (~2" diam. white delrin)
+
+    2-114/N70 (3/32") - Sea-Con bulkhead connection
+
+    2-007/N70 (1/16") - Delrin housing (Seal screw)
+    2-243/N70         - Delrin housing (main seal)
+
+
+Replace these if your o-rings haven't been used in a year or more, or if they have any of the following characteristics: cracks, dryness, flattening/body obliquity, white dust/film, or if they don't spring back to a nice even circle when deformed. When taking the old o-rings off, use a soft plastic or wood pick. This keeps the housing surface smooth--scratches to the seal surface can act as un-sealable channels which let water in.
+
+Here's a figure from the useful [Parker O-ring Handbook](https://www.parker.com/content/dam/Parker-com/Literature/O-Ring-Division-Literature/ORD-5700.pdf) which shows how properly used O-rings fail in cross section. 
+
+<img src="https://github.com/evan-lahr/photos/blob/main/oring.png?raw=true" style="height: 400px; width:400px;"/>
+
+
+
