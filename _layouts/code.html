@@ -16,12 +16,12 @@ body_classes: page-blog
   </div>
 </div>
 
-{% assign cards = site.code %}
+{% assign cards = site.sedcode | concat: site.timecode | concat: site.giscode %}
 {% if cards.size > 0 %}
 <div class="section pt-0">
   <div class="container">
     <div class="row">
-      {% for card in cards limit: 6 %}
+      {% for card in cards limit: 100 %}
       <div
         class="col-12 col-md-6 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
         {% include theme/cards/card-project.html

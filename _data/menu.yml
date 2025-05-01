@@ -2,7 +2,7 @@ main:
   - name: Home
     url: /
     weight: 1
-  - name: code
+  - name: Code
     url: /code/
     child:
       - name: "Sediment"
@@ -14,7 +14,7 @@ main:
       - name: "GIS"
         description: "maps & geospatial data"
         url: /giscode/
-  - name: Research
+  - name: Projects
     url: /projects/
     weight: 2
     child:
