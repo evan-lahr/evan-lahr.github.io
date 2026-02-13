@@ -143,10 +143,10 @@ header:
   fixed: false
 
 darkmode:
-  enable_dark_mode: true
-  show_dark_mode_toggle_in_header: true
+  enable_dark_mode: false
+  show_dark_mode_toggle_in_header: false
   show_dark_mode_toggle_in_bottom: false
-  show_dark_mode_toggle_in_mobile_menu: true
+  show_dark_mode_toggle_in_mobile_menu: false
 
 analytics:
   google_analytics_id: ""
