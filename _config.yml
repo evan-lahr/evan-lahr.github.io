@@ -39,27 +39,31 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: projects
     values:
-      layout: project
+      layout: default
+
   - scope:
       path: ""
       type: posts
     values:
       layout: post
       weight: 999
+
   - scope:
       path: "images"
     values:
       image: true
+
   - scope:
       path: "categories"
     values:
       permalink: /category/:basename/
+
   - scope:
       path: "pages"
     values:
       permalink: /:basename/
+
 
 # SCSS
 sass:
@@ -125,7 +129,7 @@ logo:
   logo_image_mobile_height: "28px"
   logo_image_mobile_width: "28px"
   show_logo_image_on_mobile: true
-  show_logo_image_on_desktop: true
+  show_logo_image_on_desktop: false
   show_logo_text_on_mobile: false
   show_logo_text_on_desktop: false
   

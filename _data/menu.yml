@@ -39,7 +39,7 @@ main:
   - name: Videos
     url: /Videos/
     weight: 2
-  - name: Gallery
+  - name: Photos
     url: /Gallery/
     weight: 2
   - name: About

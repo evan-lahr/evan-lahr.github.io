@@ -1,0 +1,90 @@
+/* Reseda-style overrides, namespaced to avoid clashes with Curate */
+.reseda-page { background:#fafafa; color:#111; }
+.reseda-toprule { border-top:1px solid #111; opacity:.25; }
+
+/* GIANT WORDMARK */
+.reseda-wordmark{
+  font-family: var(--font-heading, 'DM Sans', system-ui);
+  font-weight: 900;
+  letter-spacing: .02em;
+  line-height: .85;
+  font-size: clamp(60px, 16vw, 180px);
+  margin: 24px 0 8px;
+  text-transform: uppercase;
+}
+
+/* HERO GRID */
+.reseda-hero{
+  display:grid;
+  grid-template-columns: minmax(0,1.2fr) minmax(0,.8fr);
+  gap: 28px;
+  align-items: start;
+  margin: 12px auto 24px;
+}
+.reseda-hero .hero-copy h2{
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: clamp(16px, 2.2vw, 22px);
+  margin: 0 0 8px;
+}
+.reseda-hero .hero-copy .lede{
+  color:#222;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+/* Sections */
+.reseda-divider{ border:0; border-top:1px solid rgba(0,0,0,.12); margin: 36px 0; }
+.reseda-section{ margin: 28px 0; }
+.kicker{
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* Services split */
+.reseda-services .services-grid{
+  display:grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  gap: 28px;
+  align-items: start;
+}
+.reseda-services .copy p{ max-width: 56ch; }
+
+/* Media grids */
+.media-grid{ display:grid; gap:16px; margin-top: 10px; }
+.media-grid.cols-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+.media-grid.cols-4{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+
+/* Tiles mimic Squarespace photo blocks with subtle radius and border */
+.tile{ position:relative; overflow:hidden; border-radius: 4px; background:#e6e6e6; box-shadow: none; border: 1px solid rgba(0,0,0,.08); }
+.tile video{ display:block; width:100%; height:100%; object-fit: cover; }
+
+/* Button like Reseda (thin border, compact) */
+.res-btn{
+  display:inline-block;
+  border:1px solid #111;
+  padding: 8px 12px;
+  font-weight:700;
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: .02em;
+  color:#111;
+  text-decoration:none;
+}
+.res-btn:hover{ background:#111; color:#fff; text-decoration:none; }
+
+/* Aspect helpers */
+.ratio-4x3{ aspect-ratio: 4 / 3; }
+.ratio-3x4{ aspect-ratio: 3 / 4; }
+
+/* Responsiveness */
+@media (max-width: 980px){
+  .reseda-hero{ grid-template-columns: 1fr; }
+  .reseda-services .services-grid{ grid-template-columns: 1fr; }
+  .media-grid.cols-3, .media-grid.cols-4{ grid-template-columns: 1fr; }
+}

@@ -1,0 +1,31 @@
+/* Minimal, clean layout inspired by legal info sites */
+:root{
+  --bg:#ffffff;
+  --fg:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --card:#f9fafb;
+  --max: 980px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  color:var(--fg);
+  background:var(--bg);
+  line-height:1.55;
+}
+a{color:inherit;text-decoration:underline}
+.shell{display:grid;grid-template-columns:280px 1fr;min-height:100vh}
+.sidebar{border-right:1px solid var(--border);padding:20px}
+.brand{margin:0 0 14px 0;font-size:18px;font-weight:700}
+.nav{display:flex;flex-direction:column;gap:6px}
+.nav a{padding:10px;border-radius:10px;text-decoration:none}
+.nav a:hover{background:var(--card)}
+.nav a[aria-current="page"]{background:var(--card);font-weight:600}
+.content{padding:24px}
+.wrap{max-width:var(--max)}
+@media (max-width: 800px){
+  .shell{grid-template-columns:1fr}
+  .sidebar{border-right:none;border-bottom:1px solid var(--border)}
+}

@@ -2,7 +2,7 @@
 layout: home
 permalink: "/"
 title: "Modern Margins"
-description: "Sediment transport from coast to continental slope"
+description: "research website of Evan Lahr"
 
 meta_description: " "
 meta_title:  

@@ -3,75 +3,159 @@ layout: default
 body_classes: page-home
 ---
 
-<div class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        {% include framework/blocks/sections/heading.html
+<style>
+
+/* ============================= */
+/* FULLSCREEN VIDEO HERO */
+/* ============================= */
+
+.video-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* video fills entire screen */
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* dark overlay for readability */
+.video-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  /* responsive vertical position */
+  top: clamp(80px, 12vh, 160px);
+  /* shifts right and scales properly with screen size */
+  left: clamp(40px, 8vw, 160px);
+  /* prevents text from stretching too wide */
+  width: min(90vw, 900px);
+  z-index: 2;
+}
+
+
+.video-overlay .container {
+  margin-left: 0;
+}
+
+.video-overlay h1,
+.video-overlay .heading-title {
+  color: white !important;
+}
+
+.video-overlay p,
+.video-overlay .heading-description {
+  color: white !important;
+}
+
+
+/* ============================= */
+/* ALTERNATING CARD LAYOUT */
+/* ============================= */
+
+.cards-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.cards-alt-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.cards-alt-row .text-col {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 480px;
+}
+
+.cards-alt-row .text-col h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.cards-alt-row .text-col p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.cards-alt-row .media-col {
+  flex: 1 1 65%;
+}
+
+.cards-alt-row:nth-child(even) .text-col {
+  order: 2;
+}
+
+.cards-alt-row:nth-child(even) .media-col {
+  order: 1;
+}
+
+.media-col img,
+.media-col video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+</style>
+
+
+<!-- ============================= -->
+<!-- VIDEO HERO SECTION -->
+<!-- ============================= -->
+
+<section class="video-hero">
+
+  <video autoplay muted loop playsinline class="video-bg" preload="auto">
+
+    <source src="{{ '/hero.MP4' | relative_url }}" type="video/mp4">
+
+  </video>
+
+  <div class="video-overlay">
+    <div class="container">
+      {% include framework/blocks/sections/heading.html
         title=page.title
         description=page.description
-        %}
-      </div>
+      %}
     </div>
   </div>
-</div>
 
-{% assign cards = site.projects %}
-{% if cards.size > 0 %}
-<div class="section pt-0">
+</section>
+
+
+
+
+<!-- ============================= -->
+<!-- MAIN PAGE CONTENT -->
+<!-- ============================= -->
+
+<div class="section">
   <div class="container">
-    <div class="row">
-     
-      {% for card in cards limit: 6 %}
-      <div
-        class="col-12 col-md-6 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
-        {% include theme/cards/card-project.html
-        title=card.title
-        description=card.description
-        thumbnail=card.thumbnail
-        categories=card.categories
-        date=card.date
-        url=card.url
-        client=card.client
-        %}
-      </div>
-      {% endfor %}
-    </div>
+
+    <!-- Your cards / research sections go here -->
+
   </div>
 </div>
-{% endif %}
-
-{% assign cards = site.posts %}
-{% if cards.size > 0 %}
-<div class="section bg-base-bg-2">
-  <div class="container">
-    <div class="row">
-      {% include framework/blocks/components/grid-header.html heading="Recent Posts" %}
-      {% for card in cards limit: 3 %}
-      <div
-        class="col-12 col-md-4 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
-        {% include theme/cards/card-post.html
-        title=card.title
-        description=card.description
-        url=card.url
-        %}
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-{% endif %}
-
-{% if site.mailchimp.form_action_url %}
-{% if page.subscribe %}
-  <div class="section bg-base-bg-2">
-    <div class="container">
-      <div class="row">
-        <div class="col-12"></div>
-        {% include framework/blocks/components/subscribe.html %}
-        </div>
-      </div>
-    </div>
-  </div>
-{% endif %}
-{% endif %}
