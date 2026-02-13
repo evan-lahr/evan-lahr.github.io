@@ -81,7 +81,7 @@ exclude:
 # -------------------
 # Theme Config
 # --------------------
-title: "Jekyll Curate"
+title: " "
 category_dir: category
 
 colors:
