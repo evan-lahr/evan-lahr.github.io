@@ -28,8 +28,12 @@ main:
     url: /Gallery/
     weight: 2
   - name: CV
-    url: https://www.overleaf.com/read/gxfytgprwjqy#ec2611
+    url: /assets/images/gen/blog/CV_EJL.pdf
     weight: 2
+
+
+
+
 
 footer_primary:
   - name: "Project Layout 1"
