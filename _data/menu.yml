@@ -2,18 +2,6 @@ main:
   - name: Home
     url: /
     weight: 1
-  - name: Code
-    url: /code/
-    child:
-      - name: "Sediment"
-        description: "core & bed sample data"
-        url: /sedcode/
-      - name: "Timeseries"
-        description: "environmental records"
-        url: /timecode/
-      - name: "GIS"
-        description: "maps & geospatial data"
-        url: /giscode/
   - name: Projects
     url: /projects/
     weight: 2
@@ -36,15 +24,9 @@ main:
   - name: Blog
     url: /blog/
     weight: 2
-  - name: Videos
-    url: /Videos/
-    weight: 2
-  - name: Photos
+  - name: Media
     url: /Gallery/
     weight: 2
-  - name: About
-    url: /about/
-    weight: 3
 
 footer_primary:
   - name: "Project Layout 1"

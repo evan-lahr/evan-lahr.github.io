@@ -8,6 +8,7 @@ body_classes: page-home
 /* ============================= */
 /* FULLSCREEN VIDEO HERO */
 /* ============================= */
+
 .video-hero {
   position: relative;
   width: 100%;
@@ -22,8 +23,6 @@ body_classes: page-home
   display: block;
 }
 
-
-/* dark overlay for readability */
 .video-hero::after {
   content: "";
   position: absolute;
@@ -34,15 +33,11 @@ body_classes: page-home
 
 .video-overlay {
   position: absolute;
-  /* responsive vertical position */
   top: clamp(80px, 12vh, 160px);
-  /* shifts right and scales properly with screen size */
   left: clamp(40px, 8vw, 160px);
-  /* prevents text from stretching too wide */
   width: min(90vw, 900px);
   z-index: 2;
 }
-
 
 .video-overlay .container {
   margin-left: 0;
@@ -60,72 +55,79 @@ body_classes: page-home
 
 
 /* ============================= */
-/* ALTERNATING CARD LAYOUT */
+/* PROJECT-LEFT SECTION */
 /* ============================= */
 
-.cards-alt {
-  display: flex;
-  flex-direction: column;
-  gap: 120px;
+.project-home {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.cards-alt-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: 40px;
+.gallery-single-column .gallery-item {
+  margin-bottom: 30px;
 }
 
-.cards-alt-row .text-col {
-  flex: 1 1 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 480px;
-}
-
-.cards-alt-row .text-col h2 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.cards-alt-row .text-col p {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.cards-alt-row .media-col {
-  flex: 1 1 65%;
-}
-
-.cards-alt-row:nth-child(even) .text-col {
-  order: 2;
-}
-
-.cards-alt-row:nth-child(even) .media-col {
-  order: 1;
-}
-
-.media-col img,
-.media-col video {
+.gallery-image img {
   width: 100%;
   height: auto;
   border-radius: 6px;
 }
 
+.gallery-caption {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+.project-heading h1 {
+  margin-bottom: 20px;
+}
+
+.project-meta {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+
+/* ============================= */
+/* EXTRA LARGE SOCIAL ICONS */
+/* ============================= */
+
+.social-large {
+  margin-top: 40px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;   /* ← THIS centers horizontally */
+
+}
+
+.social-large a {
+  color: #111;
+  font-size: 150px;   /* ← increase this number */
+  line-height: 1;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.social-large a:hover {
+  color: #3d0e5b;
+  transform: scale(1.2);
+  opacity: 0.7;
+
+
 </style>
 
 
+
 <!-- ============================= -->
-<!-- VIDEO HERO SECTION -->
+<!-- VIDEO HERO SECTION (UNCHANGED) -->
 <!-- ============================= -->
 
 <section class="video-hero">
 
   <video autoplay muted loop playsinline class="video-bg" preload="auto">
-
     <source src="https://pub-c0ef624ab47f46689a333d10007386a0.r2.dev/website_1.mp4" type="video/mp4">
-
   </video>
 
   <div class="video-overlay">
@@ -140,16 +142,83 @@ body_classes: page-home
 </section>
 
 
-
-
 <!-- ============================= -->
-<!-- MAIN PAGE CONTENT -->
+<!-- PROJECT-LEFT CONTENT SECTION -->
 <!-- ============================= -->
-
-<div class="section">
+<div class="section project-home">
   <div class="container">
 
-    <!-- Your cards / research sections go here -->
+    <!-- make columns equal height and vertically justified -->
+    <div class="row align-items-stretch">
 
+
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+
+        <!-- WELCOME TEXT -->
+        <div>
+
+          <div class="project-heading">
+            <h1>welcome</h1>
+          </div>
+
+          <div class="content">
+            <p>
+            I am a geoscientist studying sediment transport on continental margins. My research combines oceanographic observations, sediment core analysis, and seafloor instrumentation to understand how floods, earthquakes, and ocean processes shape the marine sedimentary record.
+            </p>
+          </div>
+
+          <div class="social-large">
+
+            <a href="https://www.linkedin.com/in/evan-lahr-903742380/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            
+            <a href="https://github.com/evan-lahr" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- LEFT COLUMN (IMAGE GALLERY) -->
+      <div class="col-12 col-md-6 mb-6 mb-md-0 d-flex flex-column justify-content-between">
+
+        <!-- CONTACT SECTION -->
+        <div>
+
+          <div class="project-heading">
+            <h1>email</h1>
+          </div>
+
+          <div class="content">
+
+            {% if site.contact_form.use_netlify_form %}
+              {% include framework/global/forms/form-contact-netlify.html %}
+            {% elsif site.contact_form.use_formspree_form and site.contact_form.formspree_endpoint %}
+              {% include framework/global/forms/form-contact-formspree.html %}
+            {% endif %}
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT COLUMN (WELCOME + CONTACT) -->
+      
+
+    </div>
   </div>
 </div>

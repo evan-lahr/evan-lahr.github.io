@@ -1,17 +1,27 @@
 [
   {
-    "title": "Github",
-    "fa_icon": "fab fa-github",
-    "url": "https://www.zerostatic.io"
+    "title": "Google Scholar",
+    "fa_icon": "fas fa-graduation-cap",
+    "url": "https://scholar.google.com/citations?user=YOUR_ID"
   },
   {
-    "title": "Instagram",
-    "fa_icon": "fab fa-instagram-square",
-    "url": "https://www.zerostatic.io"
-  },  
+    "title": "GitHub",
+    "fa_icon": "fab fa-github",
+    "url": "https://github.com/evan-lahr"
+  },
   {
-    "title": "Youtube",
+    "title": "ResearchGate",
+    "fa_icon": "fab fa-researchgate",
+    "url": "https://www.researchgate.net/profile/YOUR_PROFILE"
+  },
+  {
+    "title": "LinkedIn",
+    "fa_icon": "fab fa-linkedin",
+    "url": "https://www.linkedin.com/in/YOUR_PROFILE"
+  },
+  {
+    "title": "YouTube",
     "fa_icon": "fab fa-youtube",
-    "url": "https://www.zerostatic.io"
+    "url": "https://youtube.com/@YOUR_CHANNEL"
   }
 ]
