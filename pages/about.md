@@ -11,7 +11,7 @@ gallery:
   - image: "/assets/images/gen/content/thompson.png"
 
 ---
- I am a marine geologist focused on modern sediment transport from river mouths to the continental slope. In this website, you'll find a mix of oceanography and geology content intended to function as a set of notes for myself and others. I hope you find what you're looking for.
+ I am a marine geologist studying sediment transport from the coast to the continental slope. In this website, you'll find a mix of oceanography and geology content intended to function as a set of notes for myself and others. I hope you find what you're looking for.
 
 ### research curriculum
  I study how continental margins fill and flush sediment in response to oceanographic and tectonic forces. Over the past 3 years, our team has made fundamental discoveries in submarine canyon systems, including that river floods can emplace large turbidite event layers in canyon channels, subduction zone earthquakes trigger massive cohesive debris flows, and that canyon flushing to the deep sea under subduction zone earthquake scenarios is variable and controlled by canyon morphology.

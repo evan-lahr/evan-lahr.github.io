@@ -24,8 +24,11 @@ main:
   - name: Blog
     url: /blog/
     weight: 2
-  - name: Media
+  - name: Gallery
     url: /Gallery/
+    weight: 2
+  - name: CV
+    url: https://www.overleaf.com/read/gxfytgprwjqy#ec2611
     weight: 2
 
 footer_primary:
