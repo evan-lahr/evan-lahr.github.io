@@ -97,23 +97,27 @@ body_classes: page-home
 .social-large {
   margin-top: 40px;
   display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-  justify-content: center;   /* ← THIS centers horizontally */
-
+  justify-content: center;   /* center the whole cluster */
+  align-items: center;
+  gap: 32px;                 /* space between icons */
+  width: 100%;
 }
 
 .social-large a {
-  color: #111;
-  font-size: 150px;   /* ← increase this number */
-  line-height: 1;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-.social-large a:hover {
-  color: #3d0e5b;
-  transform: scale(1.2);
-  opacity: 0.7;
+.social-large i {
+  font-size: clamp(52px, 6vw, 120px);
+  transition: transform 0.2s ease;
+}
+
+.social-large a:hover i {
+  transform: scale(1.15);
+}
 
 
 </style>
@@ -179,6 +183,10 @@ body_classes: page-home
 
             <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">
               <i class="fas fa-graduation-cap"></i>
+            </a>
+
+            <a href="https://www.researchgate.net/profile/Evan-Lahr-2" target="_blank">
+              <i class="fab fa-researchgate"></i>
             </a>
 
 

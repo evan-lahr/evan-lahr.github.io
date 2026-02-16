@@ -109,7 +109,7 @@ description: "A collection of standard operating procedures, spreadsheets, and h
   {% include youtube.html id='Zd57dQ6LN4U?si=gN6a0kVus2R_bfzU' %}
 </div>
 
-<h4 style="text-align: center;">LS13-320 pump troubleshooting</h4>
+<h4 style="text-align: center;">LS13-320 pump</h4>
 <div style="max-width: 480px; margin: 0 auto;">
   {% include youtube.html id='xNFdp2a4dWg?si=IovfEOWDuKyvhNKb' %}
 </div>
