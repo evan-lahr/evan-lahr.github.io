@@ -6,18 +6,21 @@ main:
     url: /projects/
     weight: 2
     child:
-      - name: "Current synchroneity"
-        description: "is near-bed current structure synchronous?"
+      - name: "Turbidite Geochemistry"
+        description: "Sedimentary source inference from composition"
         url: /projects/project-1/
-      - name: "Sediment-gravity flows"
-        description: "can storms produce SGFs?"
+      - name: "Monitoring Highstand Canyons"
+        description: "Do storms and floods trigger downslope flows?"
         url: /projects/project-2/
-      - name: "Turbidite deposits"
-        description: "are nonseismic turbidites present in cores?"
+      - name: "Micro-Mooring"
+        description: "Expendable, UAV-ready sensors"
         url: /projects/project-3/
-      - name: "Contrasting canyon morphology"
-        description: "do adjacent canyons infill similarly?"
+      - name: "CT Toolbox"
+        description: "A quantitative approach to core CT"
         url: /projects/project-4/
+      - name: "Remote Sensing Landscape Mapping"
+        description: "Mapping delta migration from LANDSAT Imagery"
+        url: /projects/project-5/
   - name: SOPs
     url: /SOPs/
     weight: 2

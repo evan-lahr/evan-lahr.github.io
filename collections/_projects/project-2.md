@@ -1,7 +1,7 @@
 ---
 layout: project-right
-title: "Can bed shear stress alone trigger turbidity currents?"
-description: "Comparing the measured relationships of shear-stress and sediment resuspension to peak shear stress events"
+title: "Monitoring Highstand Canyons"
+description: "NSF Award"
 date: 2018-11-03T10:20:00Z
 weight: 1
 thumbnail: "/assets/images/gen/projects/project-1-1-thumbnail.webp"

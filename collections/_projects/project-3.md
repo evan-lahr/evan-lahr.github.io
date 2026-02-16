@@ -1,6 +1,6 @@
 ---
 layout: project-left
-title: "Should you trust a turbidite?"
+title: "Expendable, UAV-ready sensors"
 description: "What the modern turbidite record says about runout length"
 date: 2018-12-20
 weight: 2
