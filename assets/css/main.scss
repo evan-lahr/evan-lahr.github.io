@@ -96,3 +96,11 @@ html[data-mode='dark'] {
 }
 
 @import 'style';
+
+.gallery-image img {
+  max-width: 20%; /* or 200px, adjust as needed */
+  height: auto;   /* maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* center the image */
+}
+
