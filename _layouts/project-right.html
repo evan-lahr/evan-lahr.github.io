@@ -55,8 +55,7 @@ body_classes: page-project
         <div class="gallery gallery-single-column">
           {% for item in page.gallery limit: limit %}
             <div class="gallery-item">
-              <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
-              <div class="gallery-caption">{{ item.caption }}</div>
+            <div class="gallery-image"><img src="{{ item.image | relative_url }}" {% if item.max_width %}style="max-width: {{ item.max_width }}; margin: 0 auto; display: block;"{% endif %}/></div>              <div class="gallery-caption">{{ item.caption }}</div>
             </div>
           {% endfor %}
         </div>

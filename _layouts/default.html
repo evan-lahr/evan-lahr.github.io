@@ -12,6 +12,10 @@
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="{{ site.fonts.google_fonts }}" rel="stylesheet">
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     {% if site.darkmode.enable_dark_mode != false %}
       <script>
           localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
