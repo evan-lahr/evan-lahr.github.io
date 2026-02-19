@@ -4,8 +4,8 @@ title: "Micromooring sensors"
 description: "Set-and-forget sensors for UAV deployment"
 date: 2018-12-20
 weight: 2
-thumbnail: "/assets/images/gen/projects/project-3-1-thumbnail.webp"
-image: "/assets/images/gen/projects/project-3-1.webp"
+thumbnail: "/assets/images/gen/projects/micromoor.png"
+image: "/assets/images/gen/projects/micromoor.png"
 
 gallery:
   - image: "/assets/images/gen/projects/moor-dsign.png"

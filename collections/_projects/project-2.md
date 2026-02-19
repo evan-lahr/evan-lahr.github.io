@@ -4,8 +4,8 @@ title: "Monitoring Highstand Canyons"
 description: "NSF Award No. 274444"
 date: 2018-11-03T10:20:00Z
 weight: 3
-thumbnail: "/assets/images/gen/projects/project-1-1-thumbnail.webp"
-image: "/assets/images/gen/projects/project-1-2.webp"
+thumbnail: "/assets/images/gen/projects/Proposed_Instruments.png"
+image: "/assets/images/gen/projects/Proposed_Instruments.png"
 categories: ["Development"]
 client: "Comparing the measured relationships of shear-stress and sediment resuspension to peak shear stress events"
 role: "Building Designer"

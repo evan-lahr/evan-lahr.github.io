@@ -1,12 +1,12 @@
 ---
 layout: project-top
 title: "A quantitative approach to core CT"
-description: ""
+description: "Seasonal Sedimentation and Annual Layering on the Washington Margin"
 date: 2018-12-20
 weight: 4
 thumbnail: "/assets/images/gen/projects/project-4-6-thumbnail.webp"
 image: "/assets/images/gen/projects/project-4-1.webp"
-client: "Proximal canyons with the same source, yet different morphology"
+client: "Seasonal Sedimentation and Annual Layering on the Washington Margin"
 categories: ["Development"]
 role: "Building Designer"
 gallery:
@@ -15,8 +15,8 @@ gallery:
   - image: "/assets/images/gen/projects/project-4-7.webp"
 ---
 
-Architecture is both the process and the product of planning, designing, and constructing buildings or other structures.Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art.
 
-The practice, which began in the prehistoric era, has been used as a way of expressing culture for civilizations on all seven continents.
 
-Architecture began as rural, oral vernacular architecture that developed from trial and error to successful replication. Ancient urban architecture was preoccupied with building religious structures and buildings symbolizing the political power of rulers until Greek and Roman architecture shifted focus to civic virtues.
+Submarine canyons along the Washington continental margin record a strong annual rhythm of sedimentation. Using six year-long sediment traps deployed across two canyon systems, we documented a complete seasonal cycle of particle flux from the water column to the seafloor. Winter conditions deliver dense, lithogenic sediment during energetic storms and mixing, while summer deposition is enriched in biogenic and organic material associated with high productivity and stratified waters. Down-canyon gradients in radionuclides, grain size, and bulk geochemistry reveal systematic spatial patterns in sediment supply and transport across the upper slope.
+
+To determine whether this seasonal signal is preserved in the seabed, I developed an automated varve-counting algorithm for computed tomography (CT) scans of sediment cores. The method objectively identifies and measures density couplets corresponding to alternating winter and summer deposition, allowing annual layers to be quantified without subjective visual interpretation. In dysoxic canyon basins, reduced oxygen limits bioturbation, enabling these seasonal layers to remain intact. Together, sediment trap observations, geochemical analyses, and CT-derived lamina measurements demonstrate that highstand submarine canyons can archive annually resolved environmental records.
