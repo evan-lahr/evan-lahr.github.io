@@ -1,11 +1,11 @@
 ---
 layout: project-left
-title: "Mapping delta migration from LANDSAT Imagery"
+title: "Delta migration from LANDSAT Imagery"
 description: " "
 date: 2018-12-20
 weight: 2
-thumbnail: "https://raw.githubusercontent.com/evan-lahr/photos/main/mm1.JPG"
-image: "https://raw.githubusercontent.com/evan-lahr/photos/main/mm1.JPG"
+thumbnail:  "/assets/images/gen/projects/ayeyarwaddy.png"
+image:  "/assets/images/gen/projects/ayeyarwaddy.png"
 show_map: true
 show_map: true
 map_lat: 16.0
