@@ -16,9 +16,21 @@ body_classes: page-project
         <script>
           window.addEventListener("load", function () {
             var map = L.map('map').setView([{{ page.map_lat }}, {{ page.map_lng }}], {{ page.map_zoom }});
+
             L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-              attribution: 'Tiles &copy; Esri'
+              attribution: 'Tiles &copy; Esri',
+              maxZoom: 18
             }).addTo(map);
+
+            {% if page.show_change_layer %}
+            L.tileLayer('https://pub-a092c60542374b94b313a66c04524ddd.r2.dev/landchange_tiles/{z}/{x}/{y}.png', {
+              attribution: '&copy; Modern Margins',
+              opacity: 0.85,
+              maxZoom: 14,
+              tms: false
+            }).addTo(map);
+            {% endif %}
+
             setTimeout(function() { map.invalidateSize(); }, 200);
           });
         </script>

@@ -7,10 +7,10 @@ weight: 2
 thumbnail:  "/assets/images/gen/projects/ayeyarwaddy.png"
 image:  "/assets/images/gen/projects/ayeyarwaddy.png"
 show_map: true
-show_map: true
-map_lat: 16.0
-map_lng: 95.0
-map_zoom: 9
+map_lat: 16.75
+map_lng: 96.0
+map_zoom: 8
+show_change_layer: true
 gallery:
   - image: "https://raw.githubusercontent.com/evan-lahr/photos/main/mm1.JPG"
   - image: "https://raw.githubusercontent.com/evan-lahr/photos/main/mm5.JPG"

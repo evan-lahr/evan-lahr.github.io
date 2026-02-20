@@ -4,8 +4,8 @@ title: "A quantitative approach to core CT"
 description: "Seasonal Sedimentation and Annual Layering on the Washington Margin"
 date: 2018-12-20
 weight: 4
-thumbnail: "/assets/images/gen/projects/project-4-6-thumbnail.webp"
-image: "/assets/images/gen/projects/project-4-1.webp"
+thumbnail: "/assets/images/gen/projects/core_unravel.png"
+image: "/assets/images/gen/projects/core_unravel.png"
 client: "Seasonal Sedimentation and Annual Layering on the Washington Margin"
 categories: ["Development"]
 role: "Building Designer"
