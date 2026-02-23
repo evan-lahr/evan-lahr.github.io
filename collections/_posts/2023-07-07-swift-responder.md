@@ -4,7 +4,7 @@ title: "Swift Responder Piston Coring"
 date: 2023-07-04
 description: "[video] 10-meter sediment records from 3 kilometers below the sea surface"
 thumbnail: "/assets/images/gen/blog/Swiftresponder_thumbnail.png"
-image: "/assets/images/gen/blog/blog-1.webp"
+image: "/assets/images/gen/blog/IMG_8135.jpg"
 
 categories: ["coring"]
 ---
