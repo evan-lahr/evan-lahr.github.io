@@ -10,7 +10,7 @@ client: "Comparing the measured relationships of shear-stress and sediment resus
 role: "Building Designer"
 gallery:
 
-  - image: "/assets/images/gen/projects/dep7.jpeg"
+  - image: "/assets/images/gen/projects/dep7.JPEG"
     caption: >
       <strong>Observation in deep water.</strong>
       The science party just before releasing a taught-wire mooring to 1200 meters water depth while aboard the RV Siquliak on deployment.
@@ -19,7 +19,7 @@ gallery:
 
   - image: "/assets/images/gen/projects/Proposed_Instruments.png"
     caption: "<strong>Instrumentation</strong> The design of the instrument platforms installed into Astoria and Quinault Canyons. Each platform is equipped with a range of acoustic and optical sensors monitoring water column currents and water quality. These instruments characterize the hydrodynamic environment, sediment flux, and key events over the 1-year deployment."
-  - image: "/assets/images/gen/projects/dep4.jpeg"
+  - image: "/assets/images/gen/projects/dep4.JPEG"
 
 gallery_limit: 10
 ---
