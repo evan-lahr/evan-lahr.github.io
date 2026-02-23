@@ -6,90 +6,149 @@ body_classes: page-project
 {% assign limit = page.gallery_limit | default: nil %}
 
 <div class="section">
-  <div class="container">
-    <div class="row">
+	<div class="container">
+		<div class="row">
 
-    {% if page.show_map %}
-    <div class="row mt-4">
-      <div class="col-12 mb-4">
-        <div id="map" style="width:100%; height:500px;"></div>
-        <script>
-          window.addEventListener("load", function () {
-            var map = L.map('map').setView([{{ page.map_lat }}, {{ page.map_lng }}], {{ page.map_zoom }});
+			<div class="col-12 mb-4">
+				{% if page.show_map %}
+					<div id="map" style="width:100%; height:500px;"></div>
 
-            L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-              attribution: 'Tiles &copy; Esri',
-              maxZoom: 18
-            }).addTo(map);
+					<script>
+						window.addEventListener("load", function () {
 
-            {% if page.show_change_layer %}
-            L.tileLayer('https://pub-a092c60542374b94b313a66c04524ddd.r2.dev/landchange_tiles/{z}/{x}/{y}.png', {
-              attribution: '&copy; Modern Margins',
-              opacity: 0.85,
-              maxZoom: 14,
-              tms: false
-            }).addTo(map);
-            {% endif %}
+							// Create map
+							var map = L.map('map').setView(
+								[{{ page.map_lat }}, {{ page.map_lng }}],
+								{{ page.map_zoom }}
+							);
 
-            setTimeout(function() { map.invalidateSize(); }, 200);
-          });
-        </script>
-      </div>
-    </div>
-    {% endif %}
+							// Basemap (standard XYZ)
+							L.tileLayer(
+								'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+								{
+									attribution: 'Tiles &copy; Esri',
+									maxZoom: 18
+								}
+							).addTo(map);
 
-      <div class="col-12 col-md-6 mb-6 mb-md-0">
-        <div class="gallery gallery-single-column">
-          {% for item in page.gallery limit: limit %}
-            <div class="gallery-item">
-              <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
-              <div class="gallery-caption">{{ item.caption }}</div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
+							{% if page.show_change_layer %}
+							// Mask black / near-black to transparent (client-side)
+							(function () {
 
-      <div class="col-12 col-md-6">
+								var THRESH = 12; // adjust 6–20
 
-        {% if page.title %}
-          <div class="project-heading">
-            <h1>{{ page.title }}</h1>
-          </div>
-        {% endif %}
+								var MaskedTiles = L.GridLayer.extend({
+									createTile: function (coords, done) {
 
-        {% if page.categories %}
-          <div class="project-categories">
-          {% include framework/blocks/components/categories-badges.html 
-              categories=page.categories
-          %}
-          </div>
-        {% endif %}
+										var tile = document.createElement('canvas');
+										tile.width = 256;
+										tile.height = 256;
 
-        <div class="content">{{ content }}</div>
+										var ctx = tile.getContext('2d', { willReadFrequently: true });
 
-        {% if page.date %}
-          <div class="project-date">
-            <strong>Date </strong><span>{{ page.date | date_to_long_string }}</span>
-          </div>
-        {% endif %}
+										var img = new Image();
+										img.crossOrigin = 'anonymous';
 
-        {% if page.client %}
-          <div class="project-client">
-            <strong>Client </strong><span>{{ page.client }}</span>
-          </div>
-        {% endif %}
+										img.onload = function () {
+											ctx.drawImage(img, 0, 0);
 
-        {% if page.role %}
-          <div class="project-role">
-            <strong>Role </strong><span>{{ page.role }}</span>
-          </div>
-        {% endif %}
+											var imgData = ctx.getImageData(0, 0, 256, 256);
+											var d = imgData.data;
 
-      </div>
+											for (var i = 0; i < d.length; i += 4) {
+												var r = d[i];
+												var g = d[i + 1];
+												var b = d[i + 2];
 
-    </div>
+												if (r <= THRESH && g <= THRESH && b <= THRESH) {
+													d[i + 3] = 128;
+												}
+											}
 
+											ctx.putImageData(imgData, 0, 0);
+											done(null, tile);
+										};
 
+										img.onerror = function () {
+											ctx.clearRect(0, 0, 256, 256);
+											done(null, tile);
+										};
 
-  </div>
+										img.src =
+											'https://map.lahrevan01.workers.dev/landchange_tiles/' +
+											coords.z + '/' + coords.x + '/' + coords.y + '.png';
+
+										return tile;
+									}
+								});
+
+								new MaskedTiles({
+									attribution: '&copy; Modern Margins',
+									opacity: 0.85,
+									minZoom: 6,
+									maxZoom: 14,
+									noWrap: true
+								}).addTo(map);
+
+							})();
+							{% endif %}
+
+							setTimeout(function () {
+								map.invalidateSize();
+							}, 200);
+
+						});
+					</script>
+				{% endif %}
+			</div>
+
+			<div class="col-12 col-md-6 mb-6 mb-md-0">
+				<div class="gallery gallery-single-column">
+					{% for item in page.gallery limit: limit %}
+						<div class="gallery-item">
+							<div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
+							<div class="gallery-caption">{{ item.caption }}</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6">
+
+				{% if page.title %}
+					<div class="project-heading">
+						<h1>{{ page.title }}</h1>
+					</div>
+				{% endif %}
+
+				{% if page.categories %}
+					<div class="project-categories">
+						{% include framework/blocks/components/categories-badges.html categories=page.categories %}
+					</div>
+				{% endif %}
+
+				<div class="content">{{ content }}</div>
+
+				{% if page.date %}
+					<div class="project-date">
+						<strong>Date </strong><span>{{ page.date | date_to_long_string }}</span>
+					</div>
+				{% endif %}
+
+				{% if page.client %}
+					<div class="project-client">
+						<strong>Client </strong><span>{{ page.client }}</span>
+					</div>
+				{% endif %}
+
+				{% if page.role %}
+					<div class="project-role">
+						<strong>Role </strong><span>{{ page.role }}</span>
+					</div>
+				{% endif %}
+
+			</div>
+
+		</div>
+	</div>
 </div>
