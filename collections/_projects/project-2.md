@@ -19,7 +19,10 @@ gallery:
 
   - image: "/assets/images/gen/projects/Proposed_Instruments.png"
     caption: "<strong>Instrumentation</strong> The design of the instrument platforms installed into Astoria and Quinault Canyons. Each platform is equipped with a range of acoustic and optical sensors monitoring water column currents and water quality. These instruments characterize the hydrodynamic environment, sediment flux, and key events over the 1-year deployment."
+
   - image: "/assets/images/gen/projects/dep4.JPEG"
+    caption: "<strong>Preparation</strong> The science crew preparing an instrument platform for deployment."
+
 
 gallery_limit: 10
 ---
