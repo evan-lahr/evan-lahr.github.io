@@ -1,5 +1,5 @@
 ---
-title: 'details: o-rings'
+title: 'O-rings'
 author: ejl
 date: 2022-05-01 01:01:00 +0800
 categories: [deployment hardware guide]

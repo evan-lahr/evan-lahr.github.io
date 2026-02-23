@@ -5,8 +5,7 @@ date: 2023-03-13T05:22:42Z
 authors: ["Evan Lahr"]
 categories: ["coring", "instruments"]
 description: "6 moorings and 20 cores in 6 days."
-thumbnail: "/assets/images/gen/blog/cores.jpg"
-image: "/assets/images/gen/blog/cores.jpg"
+thumbnail: "/assets/images/gen/blog/ship.jpg"
 ---
 
 
