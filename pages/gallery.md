@@ -6,10 +6,7 @@ description: "Photos and video from fieldwork, instrumentation, and analysis."
 ---
 
 <style>
-
-.media-grid .col-6 {
-  margin-bottom: 30px;
-}
+.media-grid .col-6 { margin-bottom: 30px; }
 
 .video-thumb iframe {
   width: 100%;
@@ -17,11 +14,14 @@ description: "Photos and video from fieldwork, instrumentation, and analysis."
   border-radius: 6px;
 }
 
-.gallery-thumb img {
+.gallery-thumb {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .media-title {
@@ -29,16 +29,12 @@ description: "Photos and video from fieldwork, instrumentation, and analysis."
   font-size: 0.9rem;
   margin-top: 6px;
 }
-
 </style>
 
-
-
 <div class="section">
-<div class="container">
+  <div class="container">
 
-<h1 style="text-align:center; margin-bottom:40px;">Media</h1>
-
+    <h1 style="text-align:center; margin-bottom:40px;">Media</h1>
 
 
 <h2 style="text-align:center;">Videos</h2>
@@ -88,128 +84,110 @@ description: "Photos and video from fieldwork, instrumentation, and analysis."
 </div>
 
 
+    <h2 style="text-align:center; margin-top:60px;">Gallery</h2>
 
-<h2 style="text-align:center; margin-top:60px;">Gallery</h2>
+    <div class="row media-grid">
 
-<div class="row media-grid">
+      {% assign images = "
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ak.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast10.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast11.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast13.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast14.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast15.jpeg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast2.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast3.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast4.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast5.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast6.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast7.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/ast8.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/aus1.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/aus2.jpeg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/aus3.jpeg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/crv1.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/crv2.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/crv3.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/crv4.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm1.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm2.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm3.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm4.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm5.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm7.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm8.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm9.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm10.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm11.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm12.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm13.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm14.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm15.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm16.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm17.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm18.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/mm19.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz1.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz2.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz3.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz4.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz5.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz6.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz7.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz8.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/nz9.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/tch1.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/tch2.jpg,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/tch3.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/tch4.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/tch5.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/tch7.JPG,
+      https://raw.githubusercontent.com/evan-lahr/photos/main/wa2.jpg
+      " | split: "," %}
 
-{% assign images = "
-https://raw.githubusercontent.com/evan-lahr/photos/main/ak.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast10.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast11.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast13.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast14.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast15.jpeg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast2.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast3.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast4.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast5.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast6.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast7.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/ast8.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/aus1.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/aus2.jpeg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/aus3.jpeg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/crv1.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/crv2.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/crv3.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/crv4.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm1.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm2.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm3.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm4.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm5.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm7.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm8.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm9.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm10.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm11.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm12.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm13.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm14.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm15.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm16.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm17.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm18.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/mm19.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz1.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz2.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz3.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz4.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz5.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz6.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz7.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz8.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/nz9.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/tch1.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/tch2.jpg,
-https://raw.githubusercontent.com/evan-lahr/photos/main/tch3.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/tch4.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/tch5.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/tch7.JPG,
-https://raw.githubusercontent.com/evan-lahr/photos/main/wa2.jpg
-" | split: "," %}
+      {% for img in images %}
+        {% assign full = img | strip %}
+        <div class="col-6 col-md-3">
+          <div class="gallery-thumb lazy-bg"
+               data-lightbox="true"
+               data-src="{{ full }}"
+               data-full="{{ full }}"
+               role="button"
+               tabindex="0"
+               aria-label="Open image">
+          </div>
+        </div>
+      {% endfor %}
 
-{% for img in images %}
-{% assign full = img | strip %}
-
-<div class="col-6 col-md-3">
-
-  <a href="{{ full }}" target="_blank" style="text-decoration:none;">
-
-    <div class="gallery-thumb lazy-bg"
-         data-src="{{ full }}"
-         style="
-           width:100%;
-           height:180px;
-           background-color:#111;
-           background-size:cover;
-           background-position:center;
-           border-radius:6px;
-           cursor:pointer;
-         ">
     </div>
 
-  </a>
-
+  </div>
 </div>
-
-{% endfor %}
-
-
-
-</div>
-
-</div>
-</div>
-
 
 <script>
-
 document.addEventListener("DOMContentLoaded", function() {
-
   const lazy = document.querySelectorAll(".lazy-bg");
 
   const observer = new IntersectionObserver(entries => {
-
     entries.forEach(entry => {
-
       if (entry.isIntersecting) {
-
         const el = entry.target;
         el.style.backgroundImage = `url('${el.dataset.src}')`;
         observer.unobserve(el);
-
       }
-
     });
-
-  }, {
-    rootMargin: "200px"
-  });
+  }, { rootMargin: "200px" });
 
   lazy.forEach(el => observer.observe(el));
 
+  // keyboard open (Enter/Space) for accessibility
+  document.addEventListener("keydown", function(e){
+    const el = document.activeElement;
+    if (!el || !el.matches || !el.matches('[data-lightbox="true"]')) return;
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      el.click(); // layout-level lightbox listener will handle it
+    }
+  });
 });
-
 </script>

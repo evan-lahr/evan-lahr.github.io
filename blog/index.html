@@ -23,7 +23,6 @@ title: "Blog"
         <div class="col-12 col-md-12">
           <div class="row">
             {% assign posts = site.posts %}
-            {% if paginator %}{% assign posts = paginator.posts %}{% endif %}
             
               {% if paginator %}
                 <div class="col-12">
@@ -32,7 +31,7 @@ title: "Blog"
               {% endif %}
 
               {% for post in posts %}
-                <div class="col-12 col-md-12 col-lg-10 mb-6">
+                <div class="col-12 col-md-6 mb-6">
                   {% include theme/cards/card-post.html
                     date=post.date
                     title=post.title

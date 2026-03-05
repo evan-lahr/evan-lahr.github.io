@@ -23,6 +23,78 @@
     {% endif %}
 
   </head>
+
+
+<!-- Global Lightbox (click any element with data-lightbox="true") -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <img id="lightboxImg" alt="">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+</div>
+
+<style>
+  .lightbox{ position:fixed; inset:0; display:none; z-index:9999; }
+  .lightbox.open{ display:block; }
+  .lightbox-backdrop{ position:absolute; inset:0; background:rgba(0,0,0,0.85); }
+  #lightboxImg{
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    max-width:94vw; max-height:92vh;
+    border-radius:10px;
+    box-shadow:0 12px 40px rgba(0,0,0,0.6);
+  }
+  .lightbox-close{
+    position:absolute; top:14px; right:18px;
+    font-size:38px; line-height:38px;
+    width:44px; height:44px;
+    border:none; border-radius:10px;
+    color:#fff; background:rgba(255,255,255,0.12);
+    cursor:pointer;
+  }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const lb = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lightboxImg");
+  const closeBtn = document.getElementById("lightboxClose");
+  const backdrop = document.getElementById("lightboxBackdrop");
+
+  if (!lb || !lbImg || !closeBtn || !backdrop) return;
+
+  function openLightbox(url){
+    lbImg.src = url;
+    lb.classList.add("open");
+    lb.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox(){
+    lb.classList.remove("open");
+    lb.setAttribute("aria-hidden","true");
+    lbImg.src = "";
+    document.body.style.overflow = "";
+  }
+
+  // Event delegation: works for current + future gallery items
+  document.addEventListener("click", function(e){
+    const el = e.target.closest('[data-lightbox="true"]');
+    if (!el) return;
+    const url = el.getAttribute("data-full") || el.getAttribute("data-src");
+    if (!url) return;
+    e.preventDefault();
+    openLightbox(url);
+  });
+
+  closeBtn.addEventListener("click", closeLightbox);
+  backdrop.addEventListener("click", closeLightbox);
+
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && lb.classList.contains("open")) closeLightbox();
+  });
+});
+</script>
+
 <body class="page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}">
 
 {% include framework/global/menu/menu-main-mobile.html %}
