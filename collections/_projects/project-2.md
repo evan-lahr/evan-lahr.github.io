@@ -10,20 +10,17 @@ client: "Comparing the measured relationships of shear-stress and sediment resus
 role: "Building Designer"
 gallery:
 
-  - image: "/assets/images/gen/projects/dep7.JPEG"
-    caption: >
-      <strong>Observation in deep water.</strong>
-      The science party just before releasing a taught-wire mooring to 1200 meters water depth while aboard the RV Siquliak on deployment.
-      You can watch the release <strong><a href="https://www.youtube.com/watch?v=57EBS4fE1OY" target="_blank">here</a></strong>.
-      This was one of six platforms sent down (see platform design below).
-
   - image: "/assets/images/gen/projects/Proposed_Instruments.png"
     caption: "<strong>Instrumentation</strong> The design of the instrument platforms installed into Astoria and Quinault Canyons. Each platform is equipped with a range of acoustic and optical sensors monitoring water column currents and water quality. These instruments characterize the hydrodynamic environment, sediment flux, and key events over the 1-year deployment."
 
+  - image: "/assets/images/gen/projects/canyon-timeseries.png"
+    caption: "<strong>Data.</strong> Direct observational data over a complete year in several deep-water sites across the Cascadia Margin. These data, visualized as polar historgrams, and provide an unprecedented view of hydrodynamics from the continental slope."
+
+  - image: "/assets/images/gen/projects/dep7.JPEG"
+    caption: "<strong>Observation in deep water.</strong> The science party just before releasing a taught-wire mooring to 1200 meters water depth while aboard the RV Sikuliaq on deployment. You can watch the release <strong><a href=\"https://www.youtube.com/watch?v=57EBS4fE1OY\" target=\"_blank\">here</a></strong>. This was one of the six platforms sent down."
+
   - image: "/assets/images/gen/projects/dep4.JPEG"
-    caption: "<strong>Preparation</strong> The science crew preparing an instrument platform for deployment."
-
-
+    caption: "<strong>Preparation.</strong> The science crew preparing a mooring for deployment."
 gallery_limit: 10
 ---
 
